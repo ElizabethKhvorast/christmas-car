@@ -11,12 +11,14 @@
 		D83E00C929253938000D28E7 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83E00C829253938000D28E7 /* RecordViewController.swift */; };
 		D851BDDA294B333C0071340B /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D851BDD9294B333C0071340B /* NavigationController.swift */; };
 		D851BDDC294B35980071340B /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D851BDDB294B35980071340B /* AudioPlayer.swift */; };
-		D851BDDE294B52B50071340B /* chris-rea-driving-home-for-christmas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D851BDDD294B52B50071340B /* chris-rea-driving-home-for-christmas.mp3 */; };
+		D851BDDE294B52B50071340B /* audio3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D851BDDD294B52B50071340B /* audio3.mp3 */; };
 		D870018E294770BC0061C0BF /* ScoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D870018D294770BC0061C0BF /* ScoreManager.swift */; };
 		D8700190294774590061C0BF /* ScoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D870018F294774590061C0BF /* ScoreModel.swift */; };
 		D8700193294779440061C0BF /* ScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8700191294779440061C0BF /* ScoreTableViewCell.swift */; };
 		D8700194294779440061C0BF /* ScoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8700192294779440061C0BF /* ScoreTableViewCell.xib */; };
 		D870019629477D2C0061C0BF /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D870019529477D2C0061C0BF /* DateExtension.swift */; };
+		D8E3E460294B705800872263 /* audio2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8E3E45F294B705800872263 /* audio2.mp3 */; };
+		D8E3E462294B716A00872263 /* audio1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8E3E461294B716A00872263 /* audio1.mp3 */; };
 		D8F00091292E7F6A00834D49 /* RoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F00090292E7F6A00834D49 /* RoadView.swift */; };
 		D8F00096292E828B00834D49 /* RoadInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F00095292E828B00834D49 /* RoadInterface.swift */; };
 		D8F00098292E847000834D49 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F00097292E847000834D49 /* Constants.swift */; };
@@ -38,12 +40,14 @@
 		D83E00C829253938000D28E7 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		D851BDD9294B333C0071340B /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		D851BDDB294B35980071340B /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
-		D851BDDD294B52B50071340B /* chris-rea-driving-home-for-christmas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "chris-rea-driving-home-for-christmas.mp3"; sourceTree = "<group>"; };
+		D851BDDD294B52B50071340B /* audio3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio3.mp3; sourceTree = "<group>"; };
 		D870018D294770BC0061C0BF /* ScoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreManager.swift; sourceTree = "<group>"; };
 		D870018F294774590061C0BF /* ScoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreModel.swift; sourceTree = "<group>"; };
 		D8700191294779440061C0BF /* ScoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTableViewCell.swift; sourceTree = "<group>"; };
 		D8700192294779440061C0BF /* ScoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScoreTableViewCell.xib; sourceTree = "<group>"; };
 		D870019529477D2C0061C0BF /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		D8E3E45F294B705800872263 /* audio2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio2.mp3; sourceTree = "<group>"; };
+		D8E3E461294B716A00872263 /* audio1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio1.mp3; sourceTree = "<group>"; };
 		D8F00090292E7F6A00834D49 /* RoadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadView.swift; sourceTree = "<group>"; };
 		D8F00095292E828B00834D49 /* RoadInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadInterface.swift; sourceTree = "<group>"; };
 		D8F00097292E847000834D49 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -115,7 +119,9 @@
 			isa = PBXGroup;
 			children = (
 				D8F0009D292E953500834D49 /* SaintNicholasPersonalRegular.otf */,
-				D851BDDD294B52B50071340B /* chris-rea-driving-home-for-christmas.mp3 */,
+				D8E3E461294B716A00872263 /* audio1.mp3 */,
+				D8E3E45F294B705800872263 /* audio2.mp3 */,
+				D851BDDD294B52B50071340B /* audio3.mp3 */,
 				E0F89E9429215087008AB755 /* Main.storyboard */,
 				E0F89E9729215088008AB755 /* Assets.xcassets */,
 				E0F89E9929215088008AB755 /* LaunchScreen.storyboard */,
@@ -212,11 +218,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8700194294779440061C0BF /* ScoreTableViewCell.xib in Resources */,
+				D8E3E462294B716A00872263 /* audio1.mp3 in Resources */,
 				E0F89E9B29215088008AB755 /* LaunchScreen.storyboard in Resources */,
 				E0F89E9829215088008AB755 /* Assets.xcassets in Resources */,
 				D8F0009E292E953500834D49 /* SaintNicholasPersonalRegular.otf in Resources */,
 				E0F89E9629215087008AB755 /* Main.storyboard in Resources */,
-				D851BDDE294B52B50071340B /* chris-rea-driving-home-for-christmas.mp3 in Resources */,
+				D8E3E460294B705800872263 /* audio2.mp3 in Resources */,
+				D851BDDE294B52B50071340B /* audio3.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

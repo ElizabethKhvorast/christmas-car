@@ -10,25 +10,47 @@ import AVFoundation
 class AudioPlayer
 {
     static let shared = AudioPlayer()
+    static let availableSources = ["audio1",
+                                   "audio2",
+                                   "audio3"]
     var audioPlayer: AVAudioPlayer?
+    var currentSource: String?
+    
+    init()
+    {
+        do
+        {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
+            try AVAudioSession.sharedInstance().setActive(true)
+        }
+        catch{}
+        self.currentSource = AudioPlayer.availableSources.randomElement()
+    }
     
     func playBackgroundMusic()
     {
-        self.playMusicWith(name: "chris-rea-driving-home-for-christmas")
+        var source = self.currentSource
+        if source == nil
+        {
+            source = AudioPlayer.availableSources.randomElement()
+        }
+        if let name = source
+        {
+            self.playMusicWith(name: name)
+        }
     }
     
     func playMusicWith(name: String)
     {
-        guard let path = Bundle.main.path(forResource: name, ofType: "mp3") else {
+        guard let url = Bundle.main.url(forResource: name, withExtension: "mp3") else {
             return
         }
-        let url = NSURL(fileURLWithPath: path)
         do
         {
-            self.audioPlayer = try AVAudioPlayer(contentsOf:url as URL)
-            self.audioPlayer!.numberOfLoops = -1
-            self.audioPlayer!.prepareToPlay()
-            self.audioPlayer!.play()
+            self.audioPlayer = try AVAudioPlayer(contentsOf:url)
+            self.audioPlayer?.numberOfLoops = -1
+            self.audioPlayer?.prepareToPlay()
+            self.audioPlayer?.play()
         }
         catch
         {
@@ -39,6 +61,8 @@ class AudioPlayer
     func stop()
     {
         self.audioPlayer?.stop()
+        self.audioPlayer = nil
+        self.currentSource = AudioPlayer.availableSources.randomElement()
     }
 }
 
