@@ -9,6 +9,22 @@
 /* Begin PBXBuildFile section */
 		D83E00C729253574000D28E7 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83E00C629253574000D28E7 /* StartViewController.swift */; };
 		D83E00C929253938000D28E7 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83E00C829253938000D28E7 /* RecordViewController.swift */; };
+		D851BDDA294B333C0071340B /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D851BDD9294B333C0071340B /* NavigationController.swift */; };
+		D851BDDC294B35980071340B /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D851BDDB294B35980071340B /* AudioPlayer.swift */; };
+		D851BDDE294B52B50071340B /* chris-rea-driving-home-for-christmas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D851BDDD294B52B50071340B /* chris-rea-driving-home-for-christmas.mp3 */; };
+		D870018E294770BC0061C0BF /* ScoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D870018D294770BC0061C0BF /* ScoreManager.swift */; };
+		D8700190294774590061C0BF /* ScoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D870018F294774590061C0BF /* ScoreModel.swift */; };
+		D8700193294779440061C0BF /* ScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8700191294779440061C0BF /* ScoreTableViewCell.swift */; };
+		D8700194294779440061C0BF /* ScoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8700192294779440061C0BF /* ScoreTableViewCell.xib */; };
+		D870019629477D2C0061C0BF /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D870019529477D2C0061C0BF /* DateExtension.swift */; };
+		D8F00091292E7F6A00834D49 /* RoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F00090292E7F6A00834D49 /* RoadView.swift */; };
+		D8F00096292E828B00834D49 /* RoadInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F00095292E828B00834D49 /* RoadInterface.swift */; };
+		D8F00098292E847000834D49 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F00097292E847000834D49 /* Constants.swift */; };
+		D8F0009A292E8C4D00834D49 /* CarInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F00099292E8C4D00834D49 /* CarInterface.swift */; };
+		D8F0009C292E8E0D00834D49 /* CarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F0009B292E8E0D00834D49 /* CarView.swift */; };
+		D8F0009E292E953500834D49 /* SaintNicholasPersonalRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D8F0009D292E953500834D49 /* SaintNicholasPersonalRegular.otf */; };
+		D8F000A0292F795C00834D49 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F0009F292F795C00834D49 /* SettingViewController.swift */; };
+		D8F000A2292FA49700834D49 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F000A1292FA49600834D49 /* UIViewControllerExtension.swift */; };
 		E0F89E8F29215087008AB755 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F89E8E29215087008AB755 /* AppDelegate.swift */; };
 		E0F89E9129215087008AB755 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F89E9029215087008AB755 /* SceneDelegate.swift */; };
 		E0F89E9329215087008AB755 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F89E9229215087008AB755 /* ViewController.swift */; };
@@ -20,6 +36,22 @@
 /* Begin PBXFileReference section */
 		D83E00C629253574000D28E7 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		D83E00C829253938000D28E7 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		D851BDD9294B333C0071340B /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		D851BDDB294B35980071340B /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		D851BDDD294B52B50071340B /* chris-rea-driving-home-for-christmas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "chris-rea-driving-home-for-christmas.mp3"; sourceTree = "<group>"; };
+		D870018D294770BC0061C0BF /* ScoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreManager.swift; sourceTree = "<group>"; };
+		D870018F294774590061C0BF /* ScoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreModel.swift; sourceTree = "<group>"; };
+		D8700191294779440061C0BF /* ScoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTableViewCell.swift; sourceTree = "<group>"; };
+		D8700192294779440061C0BF /* ScoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScoreTableViewCell.xib; sourceTree = "<group>"; };
+		D870019529477D2C0061C0BF /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		D8F00090292E7F6A00834D49 /* RoadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadView.swift; sourceTree = "<group>"; };
+		D8F00095292E828B00834D49 /* RoadInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadInterface.swift; sourceTree = "<group>"; };
+		D8F00097292E847000834D49 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D8F00099292E8C4D00834D49 /* CarInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarInterface.swift; sourceTree = "<group>"; };
+		D8F0009B292E8E0D00834D49 /* CarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarView.swift; sourceTree = "<group>"; };
+		D8F0009D292E953500834D49 /* SaintNicholasPersonalRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SaintNicholasPersonalRegular.otf; sourceTree = "<group>"; };
+		D8F0009F292F795C00834D49 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		D8F000A1292FA49600834D49 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		E0F89E8B29215087008AB755 /* car.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = car.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F89E8E29215087008AB755 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0F89E9029215087008AB755 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +73,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D8F0008F292E7F3E00834D49 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D8F00090292E7F6A00834D49 /* RoadView.swift */,
+				D8F0009B292E8E0D00834D49 /* CarView.swift */,
+				D8700191294779440061C0BF /* ScoreTableViewCell.swift */,
+				D8700192294779440061C0BF /* ScoreTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D8F00092292E7FE100834D49 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D8F000A1292FA49600834D49 /* UIViewControllerExtension.swift */,
+				D870019529477D2C0061C0BF /* DateExtension.swift */,
+				D8F00095292E828B00834D49 /* RoadInterface.swift */,
+				D8F00099292E8C4D00834D49 /* CarInterface.swift */,
+				D8F00097292E847000834D49 /* Constants.swift */,
+				D870018D294770BC0061C0BF /* ScoreManager.swift */,
+				D870018F294774590061C0BF /* ScoreModel.swift */,
+				D851BDDB294B35980071340B /* AudioPlayer.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D8F00093292E802400834D49 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D83E00C629253574000D28E7 /* StartViewController.swift */,
+				D83E00C829253938000D28E7 /* RecordViewController.swift */,
+				E0F89E9229215087008AB755 /* ViewController.swift */,
+				D8F0009F292F795C00834D49 /* SettingViewController.swift */,
+				D851BDD9294B333C0071340B /* NavigationController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D8F00094292E803900834D49 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D8F0009D292E953500834D49 /* SaintNicholasPersonalRegular.otf */,
+				D851BDDD294B52B50071340B /* chris-rea-driving-home-for-christmas.mp3 */,
+				E0F89E9429215087008AB755 /* Main.storyboard */,
+				E0F89E9729215088008AB755 /* Assets.xcassets */,
+				E0F89E9929215088008AB755 /* LaunchScreen.storyboard */,
+				E0F89E9C29215088008AB755 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		E0F89E8229215087008AB755 = {
 			isa = PBXGroup;
 			children = (
@@ -62,13 +145,10 @@
 			children = (
 				E0F89E8E29215087008AB755 /* AppDelegate.swift */,
 				E0F89E9029215087008AB755 /* SceneDelegate.swift */,
-				D83E00C629253574000D28E7 /* StartViewController.swift */,
-				D83E00C829253938000D28E7 /* RecordViewController.swift */,
-				E0F89E9229215087008AB755 /* ViewController.swift */,
-				E0F89E9429215087008AB755 /* Main.storyboard */,
-				E0F89E9729215088008AB755 /* Assets.xcassets */,
-				E0F89E9929215088008AB755 /* LaunchScreen.storyboard */,
-				E0F89E9C29215088008AB755 /* Info.plist */,
+				D8F00093292E802400834D49 /* ViewControllers */,
+				D8F0008F292E7F3E00834D49 /* Views */,
+				D8F00092292E7FE100834D49 /* Helpers */,
+				D8F00094292E803900834D49 /* Resources */,
 			);
 			path = car;
 			sourceTree = "<group>";
@@ -131,9 +211,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8700194294779440061C0BF /* ScoreTableViewCell.xib in Resources */,
 				E0F89E9B29215088008AB755 /* LaunchScreen.storyboard in Resources */,
 				E0F89E9829215088008AB755 /* Assets.xcassets in Resources */,
+				D8F0009E292E953500834D49 /* SaintNicholasPersonalRegular.otf in Resources */,
 				E0F89E9629215087008AB755 /* Main.storyboard in Resources */,
+				D851BDDE294B52B50071340B /* chris-rea-driving-home-for-christmas.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,10 +228,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0F89E9329215087008AB755 /* ViewController.swift in Sources */,
+				D8F000A0292F795C00834D49 /* SettingViewController.swift in Sources */,
+				D8F0009C292E8E0D00834D49 /* CarView.swift in Sources */,
 				D83E00C729253574000D28E7 /* StartViewController.swift in Sources */,
 				D83E00C929253938000D28E7 /* RecordViewController.swift in Sources */,
+				D851BDDA294B333C0071340B /* NavigationController.swift in Sources */,
 				E0F89E8F29215087008AB755 /* AppDelegate.swift in Sources */,
+				D8F00091292E7F6A00834D49 /* RoadView.swift in Sources */,
 				E0F89E9129215087008AB755 /* SceneDelegate.swift in Sources */,
+				D8F000A2292FA49700834D49 /* UIViewControllerExtension.swift in Sources */,
+				D870019629477D2C0061C0BF /* DateExtension.swift in Sources */,
+				D851BDDC294B35980071340B /* AudioPlayer.swift in Sources */,
+				D8F00096292E828B00834D49 /* RoadInterface.swift in Sources */,
+				D8700193294779440061C0BF /* ScoreTableViewCell.swift in Sources */,
+				D8700190294774590061C0BF /* ScoreModel.swift in Sources */,
+				D870018E294770BC0061C0BF /* ScoreManager.swift in Sources */,
+				D8F00098292E847000834D49 /* Constants.swift in Sources */,
+				D8F0009A292E8C4D00834D49 /* CarInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +393,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QUYZ9F84QS;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = car/Info.plist;
+				INFOPLIST_FILE = car/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Christmas Car";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -329,7 +425,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QUYZ9F84QS;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = car/Info.plist;
+				INFOPLIST_FILE = car/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Christmas Car";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;

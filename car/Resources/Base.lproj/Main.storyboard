@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rdk-XM-ud3">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SaintNicholasPersonalRegular.otf">
+            <string>SaintNicholasPERSONAL-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Setting View Controller-->
+        <scene sceneID="jVo-O0-jNE">
+            <objects>
+                <viewController storyboardIdentifier="SettingViewController" id="zLp-ws-DNJ" customClass="SettingViewController" customModule="car" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AO0-3c-KKT">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recordBackground" translatesAutoresizingMaskIntoConstraints="NO" id="FD5-LQ-aRB">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xCC-Ij-R9h"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xCC-Ij-R9h" firstAttribute="trailing" secondItem="FD5-LQ-aRB" secondAttribute="trailing" id="BNk-qX-BGt"/>
+                            <constraint firstItem="FD5-LQ-aRB" firstAttribute="leading" secondItem="xCC-Ij-R9h" secondAttribute="leading" id="Feh-97-Gco"/>
+                            <constraint firstItem="FD5-LQ-aRB" firstAttribute="top" secondItem="xCC-Ij-R9h" secondAttribute="top" id="fpb-Vg-5Mj"/>
+                            <constraint firstAttribute="bottom" secondItem="FD5-LQ-aRB" secondAttribute="bottom" id="loD-m5-cTb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="recordBackground" destination="FD5-LQ-aRB" id="EuS-3K-rrU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2WG-tt-Psr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1553.4351145038167" y="-544.36619718309862"/>
+        </scene>
+        <!--Record View Controller-->
+        <scene sceneID="87W-IX-bPh">
+            <objects>
+                <viewController storyboardIdentifier="RecordViewController" id="4JZ-sU-Sa5" customClass="RecordViewController" customModule="car" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hby-pe-xIG">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recordBackground" translatesAutoresizingMaskIntoConstraints="NO" id="gVL-uk-hah">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0DX-22-SRF">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="4JZ-sU-Sa5" id="dNZ-NM-Cx0"/>
+                                    <outlet property="delegate" destination="4JZ-sU-Sa5" id="PWU-Em-V7K"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Y4g-Eh-wFb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0DX-22-SRF" firstAttribute="leading" secondItem="Y4g-Eh-wFb" secondAttribute="leading" id="5Cu-OT-HFo"/>
+                            <constraint firstItem="Y4g-Eh-wFb" firstAttribute="trailing" secondItem="0DX-22-SRF" secondAttribute="trailing" id="AHf-Ft-T1X"/>
+                            <constraint firstItem="gVL-uk-hah" firstAttribute="top" secondItem="Y4g-Eh-wFb" secondAttribute="top" id="AP3-ne-nMm"/>
+                            <constraint firstAttribute="bottom" secondItem="0DX-22-SRF" secondAttribute="bottom" id="FKc-GB-QIU"/>
+                            <constraint firstItem="gVL-uk-hah" firstAttribute="trailing" secondItem="Y4g-Eh-wFb" secondAttribute="trailing" id="nrn-F9-gmV"/>
+                            <constraint firstAttribute="bottom" secondItem="gVL-uk-hah" secondAttribute="bottom" id="vbd-li-HlZ"/>
+                            <constraint firstItem="0DX-22-SRF" firstAttribute="top" secondItem="Y4g-Eh-wFb" secondAttribute="top" id="woo-ie-VI8"/>
+                            <constraint firstItem="gVL-uk-hah" firstAttribute="leading" secondItem="Y4g-Eh-wFb" secondAttribute="leading" id="yzm-fr-grC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="0DX-22-SRF" id="6hG-az-Kl4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7QD-Bt-cYM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-645" y="-544"/>
+        </scene>
+        <!--Start View Controller-->
+        <scene sceneID="kZN-Nl-GMt">
+            <objects>
+                <viewController id="fgx-1D-6dq" customClass="StartViewController" customModule="car" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kws-Fj-BIO">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="christmasCar" translatesAutoresizingMaskIntoConstraints="NO" id="YaI-07-shf">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Christmas Car" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kj-pG-z3L">
+                                <rect key="frame" x="55.666666666666657" y="106.66666666666666" width="282" height="144"/>
+                                <fontDescription key="fontDescription" name="SaintNicholasPERSONAL-Regular" family="Saint Nicholas PERSONAL" pointSize="60"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="3Eh-bp-Yh8">
+                                <rect key="frame" x="2" y="577" width="389" height="118"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOP-MT-a7S">
+                                        <rect key="frame" x="0.0" y="0.0" width="389" height="36"/>
+                                        <fontDescription key="fontDescription" name="SaintNicholasPERSONAL-Regular" family="Saint Nicholas PERSONAL" pointSize="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Start">
+                                            <color key="titleColor" systemColor="systemRedColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startPressed:" destination="fgx-1D-6dq" eventType="touchUpInside" id="2To-Me-IGC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPb-Ur-8aZ">
+                                        <rect key="frame" x="0.0" y="41" width="389" height="36"/>
+                                        <fontDescription key="fontDescription" name="SaintNicholasPERSONAL-Regular" family="Saint Nicholas PERSONAL" pointSize="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Records">
+                                            <color key="titleColor" systemColor="systemRedColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="recordPressed:" destination="Vl7-aJ-Cz8" eventType="touchUpInside" id="Kiv-Ll-uZc"/>
+                                            <action selector="recordPressed:" destination="fgx-1D-6dq" eventType="touchUpInside" id="fhy-Vp-wa1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkj-Fg-qkU">
+                                        <rect key="frame" x="0.0" y="82" width="389" height="36"/>
+                                        <fontDescription key="fontDescription" name="SaintNicholasPERSONAL-Regular" family="Saint Nicholas PERSONAL" pointSize="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Settings">
+                                            <color key="titleColor" systemColor="systemRedColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="settingsPressed:" destination="fgx-1D-6dq" eventType="touchUpInside" id="xef-8e-wYD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jys-8j-NRD"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3Eh-bp-Yh8" firstAttribute="leading" secondItem="jys-8j-NRD" secondAttribute="leading" constant="2" id="1N2-7g-KZB"/>
+                            <constraint firstItem="YaI-07-shf" firstAttribute="top" secondItem="jys-8j-NRD" secondAttribute="top" id="1zx-GO-Qai"/>
+                            <constraint firstAttribute="bottom" secondItem="YaI-07-shf" secondAttribute="bottom" id="3EL-ie-j4l"/>
+                            <constraint firstItem="jys-8j-NRD" firstAttribute="bottom" secondItem="3Eh-bp-Yh8" secondAttribute="bottom" constant="20" id="6Ql-AX-x6q"/>
+                            <constraint firstItem="2kj-pG-z3L" firstAttribute="centerX" secondItem="jys-8j-NRD" secondAttribute="centerX" id="75I-FJ-ooo"/>
+                            <constraint firstItem="YaI-07-shf" firstAttribute="leading" secondItem="jys-8j-NRD" secondAttribute="leading" id="EqS-wt-Meo"/>
+                            <constraint firstItem="2kj-pG-z3L" firstAttribute="centerY" secondItem="jys-8j-NRD" secondAttribute="centerY" multiplier="0.5" id="Esh-Wm-XfE"/>
+                            <constraint firstItem="jys-8j-NRD" firstAttribute="trailing" secondItem="3Eh-bp-Yh8" secondAttribute="trailing" constant="2" id="mVT-qw-L8b"/>
+                            <constraint firstItem="jys-8j-NRD" firstAttribute="trailing" secondItem="YaI-07-shf" secondAttribute="trailing" id="rqd-Fv-zs7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="muk-Sx-lrh"/>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="YaI-07-shf" id="WLl-sT-MZQ"/>
+                        <outlet property="recordButton" destination="QPb-Ur-8aZ" id="0dM-BT-M04"/>
+                        <outlet property="settingsButton" destination="rkj-Fg-qkU" id="GPF-Px-ImB"/>
+                        <outlet property="startButton" destination="NOP-MT-a7S" id="Nee-Fw-Kf4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hz5-wo-aHW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Vl7-aJ-Cz8" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-645.03816793893122" y="185.91549295774649"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pKw-SF-EnN">
+            <objects>
+                <navigationController id="rdk-XM-ud3" customClass="NavigationController" customModule="car" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="KZh-RC-sbj">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <navigationBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </navigationBarAppearance>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fgx-1D-6dq" kind="relationship" relationship="rootViewController" id="5Vf-Cz-2nA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ZT-4O-EcK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1551" y="186"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="GameViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="car" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P5j-DT-kR6" customClass="RoadView" customModule="car" customModuleProvider="target">
+                                <rect key="frame" x="32" y="59" width="329" height="793"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oJY-ls-sV6" customClass="CarView" customModule="car" customModuleProvider="target">
+                                <rect key="frame" x="32" y="59" width="329" height="793"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="61n-La-gki"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="P5j-DT-kR6" firstAttribute="leading" secondItem="61n-La-gki" secondAttribute="leading" constant="32" id="23d-8s-TIv"/>
+                            <constraint firstItem="oJY-ls-sV6" firstAttribute="bottom" secondItem="P5j-DT-kR6" secondAttribute="bottom" id="2GE-G9-803"/>
+                            <constraint firstItem="oJY-ls-sV6" firstAttribute="leading" secondItem="P5j-DT-kR6" secondAttribute="leading" id="8ZN-3i-VWk"/>
+                            <constraint firstItem="P5j-DT-kR6" firstAttribute="top" secondItem="61n-La-gki" secondAttribute="top" id="9Od-3j-xZN"/>
+                            <constraint firstItem="oJY-ls-sV6" firstAttribute="top" secondItem="P5j-DT-kR6" secondAttribute="top" id="WOZ-Og-WBp"/>
+                            <constraint firstItem="oJY-ls-sV6" firstAttribute="trailing" secondItem="P5j-DT-kR6" secondAttribute="trailing" id="avh-ZA-6vx"/>
+                            <constraint firstAttribute="bottom" secondItem="P5j-DT-kR6" secondAttribute="bottom" id="jaJ-n6-wPp"/>
+                            <constraint firstItem="61n-La-gki" firstAttribute="trailing" secondItem="P5j-DT-kR6" secondAttribute="trailing" constant="32" id="v4N-BR-DNZ"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <connections>
+                        <outlet property="carView" destination="oJY-ls-sV6" id="tu8-kK-ynS"/>
+                        <outlet property="roadView" destination="P5j-DT-kR6" id="pde-nJ-anA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="259" y="186"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="christmasCar" width="318" height="600"/>
+        <image name="recordBackground" width="338" height="600"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
