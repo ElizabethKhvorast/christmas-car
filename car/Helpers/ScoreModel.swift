@@ -17,7 +17,7 @@ struct ScoreModel: Codable
 extension ScoreModel: Comparable, Equatable
 {
     static func < (lhs: ScoreModel, rhs: ScoreModel) -> Bool {
-        return lhs.dateStart < rhs.dateStart
+        return lhs.dateStart > rhs.dateStart
     }
     
     static func == (lhs: ScoreModel, rhs: ScoreModel) -> Bool {

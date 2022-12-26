@@ -18,13 +18,12 @@ class StartViewController: UIViewController
     {
         self.addSnowflakes()
         super.viewDidLoad()
-        self.startButton.setAttributedTitle(self.makeAttributedTitle(for: "Start"),
+        self.startButton.setAttributedTitle(self.makeAttributedTitle(for: NSLocalizedString("Start", comment: "")),
                                             for: .normal)
-        self.recordButton.setAttributedTitle(self.makeAttributedTitle(for: "Record"),
+        self.recordButton.setAttributedTitle(self.makeAttributedTitle(for: NSLocalizedString("Record", comment: "")),
                                             for: .normal)
-        self.settingsButton.setAttributedTitle(self.makeAttributedTitle(for: "Settings"),
+        self.settingsButton.setAttributedTitle(self.makeAttributedTitle(for: NSLocalizedString("Settings", comment: "")),
                                             for: .normal)
-        
     }
     
     func makeAttributedTitle(for string: String) -> NSAttributedString?

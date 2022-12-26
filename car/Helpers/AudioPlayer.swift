@@ -42,13 +42,15 @@ class AudioPlayer
     
     func playMusicWith(name: String)
     {
-        guard let url = Bundle.main.url(forResource: name, withExtension: "mp3") else {
+        guard SettingsManager.shared.isMusicOn == true,
+              let url = Bundle.main.url(forResource: name, withExtension: "mp3") else {
             return
         }
         do
         {
             self.audioPlayer = try AVAudioPlayer(contentsOf:url)
             self.audioPlayer?.numberOfLoops = -1
+            self.audioPlayer?.volume = SettingsManager.shared.musicVolume / 100.0
             self.audioPlayer?.prepareToPlay()
             self.audioPlayer?.play()
         }
